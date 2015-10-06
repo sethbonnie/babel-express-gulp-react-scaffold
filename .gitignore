@@ -1,4 +1,9 @@
 node_modules/
-build/
 logs/
 *.log
+
+# Ignore build-generated files
+build/
+public/css
+public/js
+public/lib

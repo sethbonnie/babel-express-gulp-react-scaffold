@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from 'react-dom';
 
 let AppContainer = React.createClass({
 	render: function() {
@@ -10,4 +11,4 @@ let AppContainer = React.createClass({
 	}
 });// /<AppContainer />
 
-React.render( <AppContainer />, document.body );
+render( <AppContainer />, document.getElementById('container') );

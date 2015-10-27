@@ -4,6 +4,7 @@ var app = express();
 
 app.set( 'port', process.env.PORT || 7070 );
 
+app.use( morgan('dev') );
 app.use( express.static(__dirname+'/public') );
 
 app.listen( app.get('port'), function() {
